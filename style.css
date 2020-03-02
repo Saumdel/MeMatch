@@ -15,6 +15,14 @@ body {
     background: radial-gradient(rgb(25, 149, 153), rgb(32, 41, 80));
 }
 
+.sub-head {
+    text-align: center;
+    font-size: 3em;
+    background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .page-title {
     color: rgb(130, 210, 221);
     text-align: center;
@@ -26,26 +34,32 @@ body {
     grid-column: 1 / -1;
     display: flex;
     justify-content: space-between;
+    justify-content: flex-end;
+    font-style: italic;
 }
 
 .game-info {
     color: rgb(222, 253, 44);
+    justify-content: space-between;
+    justify-content: center;
 }
 
 .game-container {
     display: grid;
     grid-template-columns: repeat(4, auto);
-    grid-gap: 5px;
-    margin: 15px;
+    grid-column-gap: 0%;
+    margin: 10px;
     justify-content: center;
-    perspective: 200px;
 }
 
 .card {
-    background-color: black;
+    background-image: url("./assets/images/fcardBack.jpg");
+    background-repeat: no-repeat;
     height: 175px;
     width: 125px;
-    display: flex;  
+    background-size: contain;
+    display: flex;
+    justify-content: center;
 }
 
 
